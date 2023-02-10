@@ -1,42 +1,43 @@
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	
 }
 
 header,
 section h2,
 section h3,
 form button {
-	font-family: 'Bungee', cursive;
+	font-family: 'Lagosta', cursiva;
 	font-weight: normal;
 }
 
 body,
 input,
 textarea {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sem serifa;
 }
 
 header {
-	padding: 16px 0;
-	background-color: #182c61;
-	color: #ecf0f1;
+	padding: 30px 0;
+	background-image: url(./images/pexels-oliver-sjöström-1074505.jpg);
+	color: #f7f703;
 }
 
 header nav li {
 	display: inline;
-	margin-left: 16px;
+	margin-left: 18px;
 	font-size: 18px;
 }
 
 header nav li a {
-	color: #ecf0f1;
+	color:#f7f703;
 	text-decoration: none;
 }
 
 .container {
-	max-width: 1280px;
+	max-width: 1270px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -69,12 +70,20 @@ section h2 {
 	margin-bottom: 16px;
 }
 
+#about {
+    background-color: #f8f59f;
+}
+
+#contact {
+    background-color: #f8f59f;
+}
+
 section {
-	color: #182c61;
+	color: #482104;
 }
 
 section p {
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
 .store-front {
@@ -122,23 +131,14 @@ section h3 {
 }
 
 form button {
-	background-color: #182c61;
-	color: #ecf0f1;
+	background-image: url(./images/pexels-oliver-sjöström-1074505.jpg);
+	color: #f7f703;
 	border: none;
 	cursor: pointer;
 }
 
-form button:hover {
-	background-color: #657ab3;
-}
-
-input:focus,
-textarea:focus {
-	outline-color: #182c61;
-}
-
 footer {
-	background-color: #182c61;
-	color: #ecf0f1;
+	background-image: url(./images/pexels-oliver-sjöström-1074505.jpg);
+	color: #f7f703;
 	padding: 16px 0;
 }
