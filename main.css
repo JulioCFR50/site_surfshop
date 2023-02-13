@@ -50,12 +50,16 @@ section .container {
 }
 
 .brands-list img {
-	height: 24px;
+	height: 30px;
 }
 
 .brands-list li {
 	display: inline;
 	margin-right: 8px;
+}
+
+.brands-list li a {
+	text-decoration: none;
 }
 
 section .container {
