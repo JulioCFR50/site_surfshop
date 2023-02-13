@@ -9,14 +9,14 @@ header,
 section h2,
 section h3,
 form button {
-	font-family: 'Lagosta', cursiva;
+	font-family: 'Lagosta', cursive;
 	font-weight: normal;
 }
 
 body,
 input,
 textarea {
-	font-family: 'Roboto', sem serifa;
+	font-family: 'Roboto', sem serife;
 }
 
 header {
