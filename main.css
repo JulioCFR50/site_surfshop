@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
 	
 }
 
@@ -9,31 +10,43 @@ header,
 section h2,
 section h3,
 form button {
-	font-family: 'Lagosta', cursive;
-	font-weight: normal;
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+	color: #000000;
 }
 
-body,
-input,
-textarea {
-	font-family: 'Roboto', sem serife;
+h4 {
+	font-size: 16px;
+	color: #000000;
+	padding: 10px;
 }
+
+button {
+	background-color: rgb(200, 200, 9);
+	padding: 8px;
+	font-weight:lighter;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	justify-content: space-between;
+	
+}
+
 
 header {
-	padding: 30px 0;
+	padding: 20px 0;
 	background-image: url(./images/pexels-oliver-sjöström-1074505.jpg);
-	color: #f7f703;
+	color: #ffffff;
 }
 
 header nav li {
 	display: inline;
 	margin-left: 18px;
-	font-size: 18px;
+	font-size: 1px;
 }
 
 header nav li a {
-	color:#f7f703;
-	text-decoration: none;
+	color:#ffffff;
 }
 
 .container {
@@ -49,71 +62,50 @@ section .container {
 	justify-content: space-between;
 }
 
-.brands-list img {
-	height: 30px;
-}
-
-.brands-list li {
-	display: inline;
-	margin-right: 8px;
-}
-
-.brands-list li a {
-	text-decoration: none;
-}
-
-section .container {
-	align-items: flex-start;
-}
-
-section {
-	padding: 24px 0;
-}
-
 section h2 {
 	margin-bottom: 16px;
+	border-bottom: 1 solid red;
+	
 }
 
-#about {
+.noticias {
+	display: grid;
+	grid-template-columns: repeat(4, 24.25%);
+	column-gap: 2%;
+	row-gap: 6%;
+	
+}
+
+.noticia img {
+	max-width: 90%;
+	align-items: center;
+		
+}
+
+#about, #contact {
     background-color: #f8f59f;
 }
 
 #contact {
-    background-color: #f8f59f;
+	padding-left: 0;
 }
 
 section {
-	color: #482104;
+	color: #000000;
+	padding: 30px 0;
 }
 
 section p {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .store-front {
     margin-right: 32px;
 }
 
-.social-links img {
-	height: 24px;
-}
-
-.social-links li {
-	display: inline;
-	margin-right: 8px;
-}
-
-.social-links li a {
-	text-decoration: none;
-}
 
 #contact .container {
 	display: block;
-}
-
-.contact-methods {
-	display: flex;
-	justify-content: space-between;
 }
 
 form input,
@@ -122,23 +114,14 @@ form button {
 	display: block;
 	width: 320px;
 	margin-bottom: 8px;
-	padding: 8px;
+	align-items: center;
+	text-align:justify;
+
 }
 
-form textarea {
-	resize: none;
-	height: 180px;
-}
-
-section h3 {
+section h3, h4 {
 	margin-bottom: 16px;
-}
-
-form button {
-	background-image: url(./images/pexels-oliver-sjöström-1074505.jpg);
-	color: #f7f703;
-	border: none;
-	cursor: pointer;
+	text-decoration: none;
 }
 
 footer {
@@ -146,3 +129,103 @@ footer {
 	color: #f7f703;
 	padding: 16px 0;
 }
+
+
+@media screen and (max-width: 390px) {
+	header {
+	padding: 20px 0;
+	}
+}
+
+header h1 {
+	font-size: 24px;
+}
+
+header nav li {
+	font-size: 16px;
+}
+	
+.store-front {
+		margin-right: 32px;
+}
+
+section .container {
+		align-items: flex-start;
+}	
+
+.News {
+	grid-template-columns: repeat(1, 48%);
+	column-gap: 40%;
+	row-gap: 4%;
+}
+
+footer p {
+	font-size: 12px;
+}
+		
+@media screen and (min-width: 641px) and (max-width: 1023) {
+	header navigation { 
+	display: none;
+}
+}
+
+header h1 {
+	margin-left: 20px;
+}
+
+.loja-front {
+	max-width: 100%;
+}
+
+.News {
+	grid-template-columns: 100%;
+}
+
+Section H2 {
+	font-size: 24px;
+	text-align: justify;
+}
+
+Section H3 {
+	font-size: 18px;	
+}
+
+form input,
+form text area,
+form button {
+	width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+	header navigation { 
+	display: none;
+	}	
+}
+
+header h1 {
+	margin-left: 20px;
+}
+	
+.loja-front {
+	max-width: 100%;
+}
+	
+.News {
+	grid-template-columns: 100%;
+}
+	
+Section H2 {
+	font-size: 24px;
+}
+	
+Section H3{
+	font-size: 18px;
+	text-decoration: none;
+}
+	
+form input,
+form text area,
+form button {
+	width: 100%;
+}
+	
